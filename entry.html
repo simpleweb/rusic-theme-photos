@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simpleweb, Bootstrap empty project</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- HTML5, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Less -->
+    <link rel="stylesheet/less" href="/styles/less/bootstrap.less">
+    <script src="/js/less.js"></script>
+    
+    <!-- Fav & touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+
+    <body>
+    
+        <header class="container">
+            <h1>super cool gallery</h1>
+            <div id="space-description"><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p></div>
+        </header>
+    
+        <div id="wrapper" class="container">
+        
+            <!-- Top bar -->
+            <div class="topbar">
+              <div class="fill">
+                <div class="container">
+                    
+                  <!-- Navgiation -->
+                  <ul class="nav">
+                    <li class="active"><a href="#">Add new photo</a></li>
+                  </ul>
+                  
+                  <!-- User block -->
+                  <div id="user-block">
+                      <ul class="auth">
+                          <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
+                          <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
+                      </ul>
+                      <!--<span class="tip">login with twitter or facebook to add a new photo</span>-->
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <div id="single-entry">
+                <img src="http://placekitten.com/500/500" alt="#" class="large-photo" />
+                
+                <div id="meta">
+                    <h1>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur</h1>
+                    <span class="author"><img src="http://placehold.it/25x25" alt="#" class="avatar" /> added by DaleAnthony</span>
+                    <div id="entry-detail"><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+                    
+                    <ul class="actions-menu">
+                        <li><a href="#" title="#" class="#">like this entry</a></li>
+                        <li class="alt"><a href="#" title="#" class="#">add comment</a></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="comments" class="span12">
+                        <h3>comments</h3>
+                        <a href="#" title="#" class="btn add-comment">add comment</a>
+                        
+                        <div id="comments-form">
+                        
+                            <div class="alert-message block-message warning">
+                                <div class="logged-out">
+                                    <ul class="auth">
+                                        <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
+                                        <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
+                                    </ul>
+                                    <p><strong>to add a comment, like or add a new entry login with:</strong></p>
+                                </div>
+                            </div>
+                        
+                            <fieldset>
+                                <div class="clearfix">
+                                    <div class="input">
+                                        <textarea id="textarea2" name="textarea2" rows="3"></textarea>
+                                    </div>
+                                </div><!-- /clearfix -->
+                                <button type="submit" class="btn primary">submit comment</button>
+                            </fieldset>
+                        </div>
+                        
+                        <ol>
+                            <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong><strong>Redeye</strong></strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                            <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                            <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                            <li class="last"><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                        <ol>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+                    
+            <div id="page-navigation">
+                <a href="#" title="#" class="next">></a>
+                <a href="#" title="#" class="prev"><</a>
+            </div>
+        
+        </div> <!-- /container -->
+    
+    </body>
+</html>
