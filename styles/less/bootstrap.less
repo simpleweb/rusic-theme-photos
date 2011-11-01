@@ -103,10 +103,11 @@
     #centered { position:relative; clear:left; height:740px; width:80%; max-width:940px; min-width:940px; margin:0 auto; }
 
     header { color: @white; margin: 0; *margin: 0 0 10px 0; padding: 0;
-        h1 { max-width: 400px; float: left; position: relative; padding: 12px 12px; font-size: 40px; color: @white; background: darken(@baseColor, 20%); .border-radius(5px); 
+        &.container { position: relative; }
+        h1 { max-width: 400px; float: left; position: relative; padding: 12px 12px; font-size: 2.5em; color: @white; background: darken(@baseColor, 20%); .border-radius(5px); line-height: 1.1em;
         a { color: @white;
         &:hover { color: @white; text-decoration: none; } }}
-        #space-description { width: 250px; float: left; position: relative; margin: 0 0 0 15px; color: lighten(@baseColor, 25%); 
+        #space-description { width: 180px; float: left; position: relative; margin: 0 0 0 15px; color: lighten(@baseColor, 25%); 
             p { font-size: 12px; line-height: 18px; }}
     }
 
@@ -216,7 +217,7 @@
         .large-photo { float: left; position: relative; }
         .meta { float: left; position: relative; margin: 10px 0 10px 0;
             .description { width: 400px; float: left; position: relative; margin: 0; padding: 0; }
-            .likes { width: 70px; float: right; position: relative; text-align: center; padding:35px 5px 10px 5px; background: url(../../img/heart.png) no-repeat center 12px #EEE; .border-radius(4px); color: #D20044; }
+            .likes { width: 70px; float: right; position: relative; text-align: center; padding:35px 5px 10px 5px; margin-left: 20px; background: url(../../img/heart.png) no-repeat center 12px #EEE; .border-radius(4px); color: #D20044; }
             .author-container { width: 100%; float: left; position: relative; clear: left; margin: 5px 0 0 0; padding: 10px 0 0 0; border-top: 1px dotted @grayLight; }
             .author { float: left; position: relative; margin: 0; padding: 5px 0 5px 0; color: @gray; }}}
             .avatar{ float: left; position: relative; margin: 0 5px 0 0; }
@@ -235,7 +236,7 @@
                 &.like { background-image: url(../../img/share-heart.png); background-repeat: no-repeat; background-position: 7px 8px; }
                 &.comment { background-image: url(../../img/share-comment.png); background-repeat: no-repeat; background-position: 7px 8px; }
                 &.facebook { background-image: url(../../img/share-facebook.png); background-repeat: no-repeat; background-position: 7px 8px; }
-                &.twitter { background-image: url(../../img/share-twitter.png); background-repeat: no-repeat; background-position: 7px 8px; }}
+                &.twitter { backgrodesund-image: url(../../img/share-twitter.png); background-repeat: no-repeat; background-position: 7px 8px; }}
             &.alt a { border-right: none; }
             }
     }
@@ -267,8 +268,9 @@
     
     
     #t7_timer {
-      float: right;
-      position: relative;
+      position: absolute;
+      right: 0;
+      bottom: 20px;
       background-color: #1a1d24;
       background-image: -moz-linear-gradient(top, #2b303b, #1a1d24);
       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b303b), color-stop(1, #1a1d24));
@@ -337,7 +339,7 @@
         
     .entry-page {
         header { margin-top: 50px; }
-        .entry-image { float: left; position: relative; margin: 30px; padding: 2px; border: 1px solid #CCC; .box-shadow(0 1px 2px #CCCCCC); }
+        .entry-image { max-width: 500px; float: left; position: relative; margin: 30px; padding: 2px; border: 1px solid #CCC; .box-shadow(0 1px 2px #CCCCCC); }
         #entry-info { width: 340px; float: left; position: relative; margin: 30px 0 0 0; }
         
         .actions-menu { float: left; position: relative; clear: left; width: 100%; margin: 0 0 1px 0; border: 1px solid darken(@neutral, 25%); .border-radius(4px); background: darken(@neutral, 25%); #gradient > .vertical(darken(@neutral, 15%), darken(@neutral, 25%)); list-style-type: none; .box-shadow(0 1px 0 rgba(255,255,255,.5));
