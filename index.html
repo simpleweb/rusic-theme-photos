@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Simpleweb, Bootstrap empty project</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- HTML5, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <!-- Less -->
-    <link rel="stylesheet/css" href="/styles/css/animate.css">
-    <link rel="stylesheet/less" href="/styles/less/bootstrap.less">
-    <script src="/js/less.js"></script>
-    
-    <!-- Fav & touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-</head>
 
+    <head>
+        <meta charset="utf-8">
+        <title>Simpleweb, Bootstrap empty project</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <!-- HTML5, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- Less -->
+        <link rel="stylesheet/css" href="/styles/css/animate.css">
+        <link rel="stylesheet/less" href="/styles/less/bootstrap.less">
+        <script src="/js/less.js"></script>
+        
+        <!-- Fav & touch icons -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+    
+    
     <body>
     
         <div id="floater"></div>
         
         <div id="centered">
-        <header class="container">
-            <h1>evil kittens.</h1>
-            <div id="space-description"><p>A gallery for evil kittens that want to take over the world.</p></div>
-            
-            <div data-expires_at="2011-08-27T15:10:00Z" id="timer" class="hasCountdown"><div id="t7_timer"><div id="t7_vals"><div id="t7_d" class="t7_numbs">000<span></span></div><div id="t7_h" class="t7_numbs">00<span></span></div><div id="t7_m" class="t7_numbs">00<span></span></div><div id="t7_s" class="t7_numbs">00<span></span></div></div><span class="countdown-text">left to submit your photos</span></div></div>
-        </header>
-    
-        <div id="wrapper" class="container">
+            <header class="container">
+                <h1>evil kittens.</h1>
+                <div id="space-description"><p>A gallery for evil kittens that want to take over the world.</p></div>
+                <div data-expires_at="2011-08-27T15:10:00Z" id="timer" class="hasCountdown"><div id="t7_timer"><div id="t7_vals"><div id="t7_d" class="t7_numbs">000<span></span></div><div id="t7_h" class="t7_numbs">00<span></span></div><div id="t7_m" class="t7_numbs">00<span></span></div><div id="t7_s" class="t7_numbs">00<span></span></div></div><span class="countdown-text">left to submit your photos</span></div></div>
+            </header>
         
+        <div id="wrapper" class="container">
+            
             <!-- Top bar -->
             <div class="topbar">
-              <div class="fill">
-                <div class="container">
-                    
-                  <!-- Navgiation -->
-                  <!--
-                  <div id="navigation">
-                      <a href="#" title="#" class="btn primary">add new entry</a>
-                  </div>
-                  -->
-                  
-                  <!-- User block -->
-                  <div id="user-block">
-                      <ul class="auth">
-                          <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
-                          <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
-                      </ul>
-                      
-                      <div class="alert-message logintip">
-                        <!--<a class="close" href="#">×</a>--><i></i>
-                        <p>to add a new entry, like an entry or comment login with:</p>
-                      </div>
-                      
-                      
-                      <!--
-                      <div id="user">
-                          <img src="http://placehold.it/30x30" alt="#" class="avatar" />
-                          <span>welcome back, Dale <a href="#" title="#">(logout)</a></span>
-                      </div>
-                      -->
-                  </div>
-                  
+                <div class="fill">
+                    <div class="container">
+            
+                        <!-- User block -->
+                        <div id="user-block">
+                            <ul class="auth">
+                                <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
+                                <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
+                            </ul>
+                        
+                            <div class="alert-message logintip">
+                                <!--<a class="close" href="#">×</a>--><i></i>
+                                <p>to add a new entry, like an entry or comment login with:</p>
+                            </div>
+                                
+                            <!--
+                            <div id="user">
+                            <img src="http://placehold.it/30x30" alt="#" class="avatar" />
+                            <span>welcome back, Dale <a href="#" title="#">(logout)</a></span>
+                            </div>
+                            -->
+                        </div>
+            
+                    </div>
                 </div>
-              </div>
             </div>
             
             <div id="sort-order">
@@ -82,7 +75,7 @@
                     <li><a href="#">most comments</a></li>
                 </ul>
             </div>
-
+            
             <div id="share-space">
                 <ul class="buttons">
                     <li><fb:like href="http://hq.rusic.com/" layout="button_count" class=" fb_edge_widget_with_comment fb_iframe_widget"><span><iframe id="f154896a18" name="f6a98827c" scrolling="no" style="width: 90px; height: 22px; margin: 0;" frameborder="0" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=107114766046971&amp;channel_url=http%3A%2F%2Fstatic.ak.fbcdn.net%2Fconnect%2Fxd_proxy.php%3Fversion%3D3%23cb%3Df33916a654%26origin%3Dhttp%253A%252F%252Fhq.rusic.com%252Ff388e70228%26relation%3Dparent.parent%26transport%3Dpostmessage&amp;extended_social_context=false&amp;href=http%3A%2F%2Fhq.rusic.com%2F&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;show_faces=false&amp;width=90"></iframe></span></fb:like></li>
@@ -90,40 +83,40 @@
                 </ul>
                 <span class="text">share this space:</span>
             </div>
-
+            
             <ul id="entries-gallery">
-                <li class=""><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                
-                <li class="alt"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="rand"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="alt"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="last"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="alt"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class=""><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="alt"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class=""><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="last alt rand"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class=""><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="alt rand"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="rand"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="alt rand"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
-                <li class="last alt"><a href="/entry-alt.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
-                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class=""><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                
+                <li class="alt"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="rand"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="alt"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="last"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="alt"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class=""><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="alt"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class=""><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="last alt rand"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class=""><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="alt rand"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="rand"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="alt rand"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
+                <li class="last alt"><a href="/entry.html" title="#" class="#"><img src="http://placekitten.com/157/157" alt="#" /><h2>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</h2>
+                <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>                    <span class="like-count"><span class="heart">&hearts;</span> 77777</span></a></li>
             </ul>
-        
+            
             <div id="page-navigation">
                 <a href="#" title="#" class="next">next page</a>
                 <a href="#" title="#" class="prev">previous page</a>
@@ -131,7 +124,8 @@
             
             </div>
         
-        </div> <!-- /container -->
+        </div>
     
     </body>
+    
 </html>

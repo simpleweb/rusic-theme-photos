@@ -207,7 +207,6 @@
             li { float: left; position: relative; margin: 5px 0; }
         }
     }
-    
 
     // SINGLE ENTRY //
     
@@ -217,7 +216,9 @@
         .large-photo { float: left; position: relative; }
         .meta { float: left; position: relative; margin: 10px 0 10px 0;
             .description { width: 400px; float: left; position: relative; margin: 0; padding: 0; }
-            .likes { width: 70px; float: right; position: relative; text-align: center; padding:35px 5px 10px 5px; margin-left: 20px; background: url(../../img/heart.png) no-repeat center 12px #EEE; .border-radius(4px); color: #D20044; }
+            .likes { width: 70px; float: right; position: relative; text-align: center; padding:35px 5px 10px 5px; margin-left: 20px; background: url(../../img/heart.png) no-repeat center 12px #EEE; .border-radius(4px); color: #D20044;
+            a { color: #D20044;
+            &:hover { text-decoration: none; } } }
             .author-container { width: 100%; float: left; position: relative; clear: left; margin: 5px 0 0 0; padding: 10px 0 0 0; border-top: 1px dotted @grayLight; }
             .author { float: left; position: relative; margin: 0; padding: 5px 0 5px 0; color: @gray; }}}
             .avatar{ float: left; position: relative; margin: 0 5px 0 0; }
@@ -267,6 +268,8 @@
     }
     
     
+    // Countdown //
+    
     #t7_timer {
       position: absolute;
       right: 0;
@@ -311,6 +314,22 @@
           border-top: 1px solid rgba(0, 0, 0, 0.6);
           height: 1px; }
       
+      #t7_timer {
+        padding: 10px;
+        background: darken(@baseColor, 10%);
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        .border-radius(4px);
+        .box-shadow(0 1px 0 rgba(255,255,255,.1));
+        margin-top: -24px;
+        color: lighten(@baseColor, 10%);
+        }
+        
+      .countdown-text { width: 100%; float: left; position: relative; text-align: center; margin-top: 5px; }
+      
+      
+      
+      // COMMENTS //
       #new-entry {
           .clearfix { margin: 0 0 10px 0; }
           label { margin: 0 20px 0 0; }
@@ -321,20 +340,6 @@
           #gradient > .vertical-three-colors(#ffffff, #ffffff, 25%, darken(#ffffff, 10%));
           &.primary { #gradient > .vertical-three-colors(@complement, @complement, 25%, darken(@complement, 10%)); }
       }
-        
-    
-    #t7_timer {
-      padding: 10px;
-      background: darken(@baseColor, 10%);
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0;
-      .border-radius(4px);
-      .box-shadow(0 1px 0 rgba(255,255,255,.1));
-      margin-top: -24px;
-      color: lighten(@baseColor, 10%);
-      }
-      
-    .countdown-text { width: 100%; float: left; position: relative; text-align: center; margin-top: 5px; }
     
         
     .entry-page {
