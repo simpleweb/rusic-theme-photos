@@ -12,6 +12,7 @@
     <![endif]-->
     
     <!-- Less -->
+    <link rel="stylesheet/css" href="/styles/css/animate.css">
     <link rel="stylesheet/less" href="/styles/less/bootstrap.less">
     <script src="/js/less.js"></script>
     
@@ -22,11 +23,13 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
 
-    <body>
-    
+    <body class="entry-page">
+        
         <header class="container">
-            <h1>super cool gallery</h1>
-            <div id="space-description"><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p></div>
+            <h1><a href="/index.html" title="#">evil kittens.</a></h1>
+            <div id="space-description"><p>A gallery for evil kittens that want to take over the world.</p></div>
+            
+            <div data-expires_at="2011-08-27T15:10:00Z" id="timer" class="hasCountdown"><div id="t7_timer"><div id="t7_vals"><div id="t7_d" class="t7_numbs">000<span></span></div><div id="t7_h" class="t7_numbs">00<span></span></div><div id="t7_m" class="t7_numbs">00<span></span></div><div id="t7_s" class="t7_numbs">00<span></span></div></div><span class="countdown-text">left to submit your photos</span></div></div>
         </header>
     
         <div id="wrapper" class="container">
@@ -37,82 +40,106 @@
                 <div class="container">
                     
                   <!-- Navgiation -->
-                  <ul class="nav">
-                    <li class="active"><a href="#">Add new photo</a></li>
-                  </ul>
+                  <div id="navigation">
+                      <a href="#" title="#" class="btn primary">add new entry</a>
+                  </div>
                   
                   <!-- User block -->
                   <div id="user-block">
+                  
+                  <!--
                       <ul class="auth">
                           <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
                           <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
                       </ul>
-                      <!--<span class="tip">login with twitter or facebook to add a new photo</span>-->
+                      
+                      <div class="alert-message logintip">
+                        <a class="close" href="#">×</a><i></i>
+                        <p>to add a new entry, like an entry or comment login with:</p>
+                      </div>
+                  -->
+                      
+                      <div id="user">
+                          <img src="http://placehold.it/30x30" alt="#" class="avatar" />
+                          <span>welcome back, Dale <a href="#" title="#">(logout)</a></span>
+                      </div>
                   </div>
                   
                 </div>
               </div>
             </div>
 
-
-            <div id="single-entry">
-                <img src="http://placekitten.com/500/500" alt="#" class="large-photo" />
-                
-                <div id="meta">
-                    <h1>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur</h1>
-                    <span class="author"><img src="http://placehold.it/25x25" alt="#" class="avatar" /> added by DaleAnthony</span>
-                    <div id="entry-detail"><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
-                    
-                    <ul class="actions-menu">
-                        <li><a href="#" title="#" class="#">like this entry</a></li>
-                        <li class="alt"><a href="#" title="#" class="#">add comment</a></li>
-                    </ul>
-                    
-                </div>
-                
-                <div class="comments" class="span12">
-                        <h3>comments</h3>
-                        <a href="#" title="#" class="btn add-comment">add comment</a>
-                        
-                        <div id="comments-form">
-                        
-                            <div class="alert-message block-message warning">
-                                <div class="logged-out">
-                                    <ul class="auth">
-                                        <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
-                                        <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
-                                    </ul>
-                                    <p><strong>to add a comment, like or add a new entry login with:</strong></p>
-                                </div>
-                            </div>
-                        
-                            <fieldset>
-                                <div class="clearfix">
-                                    <div class="input">
-                                        <textarea id="textarea2" name="textarea2" rows="3"></textarea>
-                                    </div>
-                                </div><!-- /clearfix -->
-                                <button type="submit" class="btn primary">submit comment</button>
-                            </fieldset>
-                        </div>
-                        
-                        <ol>
-                            <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong><strong>Redeye</strong></strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
-                            <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
-                            <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
-                            <li class="last"><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
-                        <ol>
-                    </div>
-                </div>
-                
+            <!--
+            <div id="share-space">
+                <ul class="buttons">
+                    <li><fb:like href="http://hq.rusic.com/" layout="button_count" class=" fb_edge_widget_with_comment fb_iframe_widget"><span><iframe id="f154896a18" name="f6a98827c" scrolling="no" style="width: 90px; height: 22px; margin: 0;" frameborder="0" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=107114766046971&amp;channel_url=http%3A%2F%2Fstatic.ak.fbcdn.net%2Fconnect%2Fxd_proxy.php%3Fversion%3D3%23cb%3Df33916a654%26origin%3Dhttp%253A%252F%252Fhq.rusic.com%252Ff388e70228%26relation%3Dparent.parent%26transport%3Dpostmessage&amp;extended_social_context=false&amp;href=http%3A%2F%2Fhq.rusic.com%2F&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;show_faces=false&amp;width=90"></iframe></span></fb:like></li>
+                    <li><iframe src="http://platform.twitter.com/widgets/tweet_button.html#_=1319813930583&amp;count=none&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fhq.rusic.com%2Fhow-can-we-improve-rusic&amp;text=How%20can%20we%20improve%20Rusic%3F&amp;url=http%3A%2F%2Fhq.rusic.com%2Fhow-can-we-improve-rusic&amp;via=rusicHQ" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-none" style="width: 55px; height: 20px; " title="Twitter For Websites: Tweet Button"></iframe><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+                </ul>
+                <span class="text">share this page:</span>
             </div>
+            -->
+        
+            
+                <img src="http://placekitten.com/500/500" alt="" class="entry-image" />
+            
+            
+            <div id="entry-info">
+                <h1>Praesent commodo cursus magna, vel scelerisque nisl consectetur et</h1>
+                <div id="entry-meta"><img src="http://placehold.it/25x25" alt="#" class="avatar" /><span class="author">by DaleAnthony</span></div>
+                <div id="entry-detail"><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.</p></div>
+                
+                <ul class="actions-menu">
+                    <li><a href="#" title="#" class="like">like this entry</a></li>
+                    <li class="alt"><a href="#" title="#" class="comment">add comment</a></li>
+                </ul>
+                
+                <!--
+                <ul class="actions-menu">
+                    <li><a href="#" title="#" class="facebook">like on facebook</a></li>
+                    <li class="alt"><a href="#" title="#" class="twitter">share on twitter</a></li>
+                </ul>
+                -->
+            </div>
+            
+            <div class="comments" class="span12">
+                    <h3>comments</h3>
+                    
+                    <div id="comments-form">
+                    
+                        <div class="alert-message block-message warning">
+                            <div class="logged-out">
+                                <ul class="auth">
+                                    <li class="twitter"><a href="/users/auth/twitter" class="button"><span></span>Twitter</a></li>
+                                    <li class="facebook"><a href="/users/auth/facebook" class="button"><span></span>Facebook</a></li>
+                                </ul>
+                                <p><strong>to add a comment, like or add a new entry login with:</strong></p>
+                            </div>
+                        </div>
+                    
+                        <fieldset>
+                            <div class="clearfix">
+                                <div class="input">
+                                    <textarea id="textarea2" name="textarea2" rows="3"></textarea>
+                                </div>
+                            </div><!-- /clearfix -->
+                            <button type="submit" class="btn primary">submit comment</button>
+                        </fieldset>
+                    </div>
+                    
+                    <ol>
+                        <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong><strong>Redeye</strong></strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                        <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                        <li><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                        <li class="last"><img src="http://placehold.it/80x80" alt="#" class="avatar" /><div class="author">yesterday at 10am <strong>Redeye</strong> said...</div><div class="comment"><p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Alt sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div></li>
+                    <ol>
+                </div>
+            
+            </div>
+            
+            
+            
 
             
-                    
-            <div id="page-navigation">
-                <a href="#" title="#" class="next">></a>
-                <a href="#" title="#" class="prev"><</a>
-            </div>
         
         </div> <!-- /container -->
     
