@@ -1,23 +1,23 @@
     <div class="entry-page">
-    
+
     <a href="{{space.permalink}}" title="back to all {{space.title}} entries" class="back-link">&laquo; back to all entries</a>
-    
+
     <img src="{{idea.images.first.grande}}" alt="Image for {{idea.title}}" class="entry-image" />
-    
+
     <div id="entry-info">
         <h1>{{idea.title}}</h1>
         <div id="entry-meta"><img src="{{idea.user.image_url}}" alt="avatar for {{%idea.user%}}" width="25" height="25" class="avatar" /><span class="author">by <a href="" title="link to {{idea.user.nickname}} profile on {{user.provider}}">{{idea.user.nickname}}</a></span></div>
         <div id="entry-detail">{{idea.content | markdown}}</div>
-        
+
         <ul class="actions-menu">
             <li><a href="{{idea.like_link}}" data-method="post" title="like this entry" class="like">like this entry</a></li>
-            <li class="alt"><a href="#comments" title="link to comments for this entry" class="comment">X comments</a></li>
+            <li class="alt"><a href="#comments" title="link to comments for this entry" class="comment">{{ idea.comments_count }} comments</a></li>
         </ul>
     </div>
-    
+
     <div id="comments" class="comments" class="span12">
                 <h3>comments</h3>
-                
+
                 <div id="comments-form">
                     {% if current_user %}
                     <form action="{{idea.permalink}}/comments" method="post" charset="utf-8">
@@ -39,7 +39,7 @@
                     </div>
                     {% endif %}
                 </div>
-            
+
                 {% if idea.comments != empty %}
                 <ol>
                     {% for comment in idea.comments %}
@@ -51,9 +51,9 @@
                     <li><p>Nobody has commented here yet, maybe you could be the first?</p></li>
                 </ol>
                 {% endif %}
-                
+
             </div>
-            
+
             </div>
-    
+
     </div>
