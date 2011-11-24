@@ -3145,8 +3145,15 @@ header #space-description p {
   clear: left;
   margin-bottom: 20px;
 }
-#t7_timer {
-  width: 270px;
+.countdown-text {
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-top: 5px;
+}
+div#timer {
+  width: 248px;
   position: absolute;
   right: 0;
   bottom: 5px;
@@ -3154,15 +3161,35 @@ header #space-description p {
   background-color: #1a1d24;
   background-image: -moz-linear-gradient(top, #2b303b, #1a1d24);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b303b), color-stop(1, #1a1d24));
-  padding: 10px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
   -webkit-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.9);
   box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  background: #533049;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: -24px;
+  color: #955483;
 }
-#t7_timer #t7_vals .t7_numbs {
+time#expires-at {
+  display: inline-block;
+  width: auto;
+}
+time#expires-at span.countdown_row {
+  display: block;
+  height: 43px;
+  overflow: hidden;
+}
+time#expires-at span.countdown_row span.countdown_section {
+  display: block;
+  float: left;
+  color: #eee;
+}
+time#expires-at span.countdown_row span.countdown_section span.countdown_amount {
   position: relative;
   float: left;
   letter-spacing: 4px;
@@ -3173,8 +3200,8 @@ header #space-description p {
   color: #dddddd;
   font-family: monospace;
   margin-right: 3px;
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
@@ -3182,37 +3209,9 @@ header #space-description p {
   background-image: -moz-linear-gradient(top, #383838, black);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #383838), color-stop(1, black));
   text-shadow: 0 -1px 1px black;
-}
-#t7_timer #t7_vals .t7_numbs span {
-  width: 100%;
-  height: 2px;
-  top: 19px;
-  left: 0;
-  position: absolute;
-  background: #111111;
-  border-top: 1px solid rgba(0, 0, 0, 0.6);
-  height: 1px;
-}
-#t7_timer {
-  padding: 10px;
-  background: #533049;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: -24px;
-  color: #955483;
-}
-.countdown-text {
-  width: 100%;
-  float: left;
-  position: relative;
+  min-width: 44px;
   text-align: center;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #new-entry .clearfix {
   margin: 0 0 10px 0;

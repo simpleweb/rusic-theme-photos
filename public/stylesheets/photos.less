@@ -246,25 +246,43 @@
     }
 
 
-    // Countdown //
 
-    #t7_timer {
-      width: 270px;
-      position: absolute;
-      right: 0;
-      bottom: 5px;
-      bottom: 0\9;
-      background-color: #1a1d24;
-      background-image: -moz-linear-gradient(top, #2b303b, #1a1d24);
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b303b), color-stop(1, #1a1d24));
-      padding: 10px;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-      -webkit-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.9);
-      -moz-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.9);
-      box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.9); }
-      #t7_timer #t7_vals .t7_numbs {
+.countdown-text { width: 100%; float: left; position: relative; text-align: center; margin-top: 5px; }
+
+div#timer {
+  width: 248px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  bottom: 0\9;
+  background-color: #1a1d24;
+  background-image: -moz-linear-gradient(top, #2b303b, #1a1d24);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b303b), color-stop(1, #1a1d24));
+  .box-shadow(inset 0px 0px 7px rgba(0, 0, 0, 0.9));
+  padding: 10px;
+  background: darken(@baseColor, 10%);
+  .border-radius(4px);
+  .box-shadow(0 1px 0 rgba(255,255,255,.1));
+  margin-top: -24px;
+  color: lighten(@baseColor, 10%);
+}
+
+time#expires-at {
+  display: inline-block;
+  width: auto;
+
+
+  span.countdown_row {
+    display: block;
+    height: 43px;
+    overflow: hidden;
+
+    span.countdown_section {
+      display: block;
+      float: left;
+      color: #eee;
+
+      span.countdown_amount {
         position: relative;
         float: left;
         letter-spacing: 4px;
@@ -275,38 +293,20 @@
         color: #dddddd;
         font-family: monospace;
         margin-right: 3px;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+        .border-radius(4px);
+        .box-shadow(0px 1px 4px rgba(0, 0, 0, 0.6));
         background-image: -moz-linear-gradient(top, #383838, black);
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #383838), color-stop(1, black));
-        text-shadow: 0 -1px 1px black; }
-        #t7_timer #t7_vals .t7_numbs span {
-          width: 100%;
-          height: 2px;
-          top: 19px;
-          left: 0;
-          position: absolute;
-          background: #111111;
-          border-top: 1px solid rgba(0, 0, 0, 0.6);
-          height: 1px; }
+        text-shadow: 0 -1px 1px black;
+        min-width: 44px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+  }
 
-      #t7_timer {
-        padding: 10px;
-        background: darken(@baseColor, 10%);
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        .border-radius(4px);
-        .box-shadow(0 1px 0 rgba(255,255,255,.1));
-        margin-top: -24px;
-        color: lighten(@baseColor, 10%);
-        }
 
-      .countdown-text { width: 100%; float: left; position: relative; text-align: center; margin-top: 5px; }
-
+}
 
 
       // COMMENTS //
