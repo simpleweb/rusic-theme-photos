@@ -8,9 +8,9 @@
         </ul>
     </div>
     
-    {% if rusic.ideas != empty %}
+    {% if space.ideas != empty %}
     <ul id="entries-gallery">
-        {% paginate rusic.ideas by 15 %}
+        {% paginate space.ideas by 15 %}
         {% for idea in paginate %}
         <li class=""><a href="{{idea.permalink}}" title="link to full page for {{idea.title}}"><img src="{{idea.images.first.medium_square}}" alt="Image for {{idea.title}}" width="157" height="157" /><h2>{{idea.title}}</h2>
         <span class="like-count"><span class="heart">&hearts;</span> {{idea.likes}}</span></a></li>
