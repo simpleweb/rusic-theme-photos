@@ -7,7 +7,7 @@
             <li><a href="#">most comments</a></li>
         </ul>
     </div>
-    
+
     {% if space.ideas != empty %}
     <ul id="entries-gallery">
         {% paginate space.ideas by 15 %}
@@ -18,9 +18,9 @@
         {% endpaginate %}
     </ul>
     {% endif %}
-    
+
     <!-- Paging -->
     <div id="page-navigation">
-        <a href="#" title="#" class="next">next page</a>
-        <a href="#" title="#" class="prev">previous page</a>
+        <a href="{{ pagination.next_url }}" title="#" class="next">next page</a>
+        <a href="{{ pagination.previous_url }}" title="#" class="prev">previous page</a>
     </div>
