@@ -1,4 +1,4 @@
-    <!-- User block -->
+    <!--
     <div id="sort-order">
         <span>Order by:</span>
         <ul class="pills">
@@ -7,6 +7,7 @@
             <li><a href="#">most comments</a></li>
         </ul>
     </div>
+    -->
 
     {% if space.ideas != empty %}
     <ul id="entries-gallery">
@@ -17,6 +18,17 @@
         {% endfor %}
         {% endpaginate %}
     </ul>
+    {% else %}
+
+    <div class="empty">
+      <h1>There aren't any photos here yet!</h1>
+      {% if current_user %}
+      <p>be the first to add photo by using the 'add a new idea' button</p>
+      {% else %}
+      <p>login with twitter or facebook to be the first to add a photo</p>
+      {% endif %}
+    </div>
+
     {% endif %}
 
     <!-- Paging -->

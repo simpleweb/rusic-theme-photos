@@ -11,8 +11,8 @@
 
     // Bootstrap overrides
     @baseColor:     #744266;
-    @neutral:           #CCC;
-    @red:                   #D20044;
+    @neutral:       #CCC;
+    @red:           #D20044;
 
     @basefont:          13px;
     @baseline:          16px;
@@ -389,5 +389,16 @@ time#expires-at {
     p { margin-bottom: 15px; }
 
     .alert-message.prompt {
-        margin: 60px 20px 5px 20px;
+        width: 425px;
+        float: left; position: relative;
+        margin: 10px 20px 5px 20px;
+    }
+
+    .empty {
+        width: 100%;
+        float: left; position: relative; clear: left;
+        margin: 30px 0 40px 0;
+        text-align: center;
+        h1 { font-size: 2.2em; color: @gray; margin: 0 0 5px 0; } 
+        p { color: @gray; }
     }

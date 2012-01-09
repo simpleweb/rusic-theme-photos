@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $('.alert-message.prompt').delay(2000).fadeOut('slow');
+
     // Show & hide new idea container
     $(".slide").hide();
     $(".show").show();
@@ -9,11 +11,19 @@ $(document).ready(function(){
     });
 
     // Show & hide new idea container
-    $("#new-entry ").hide();
+    $("#new-entry").hide();
     $(".showbtn").show();
     
     $('.showbtn').click(function(){
-    $("#new-entry ").slideToggle();
+    $("#new-entry").delay(200).slideToggle();
+    });
+
+    // Show & hide new idea container
+    $("#page-navigation").show();
+    $(".showbtn").show();
+    
+    $('.showbtn').click(function(){
+    $("#page-navigation").fadeToggle(100);
     });
     
     // Add alt class to photoboard
