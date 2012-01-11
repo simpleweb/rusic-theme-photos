@@ -2464,21 +2464,6 @@ header h1 a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-header #space-description {
-  width: 100%;
-  float: left;
-  position: relative;
-  clear: left;
-  margin: 20px 0 0 0;
-  padding: 10px 0 0 0;
-  color: #b67fa7;
-  border-top: 1px dotted #4d2c44;
-}
-header #space-description p {
-  margin: 0;
-  padding: 0;
-  color: #bfbfbf;
-}
 #wrapper {
   position: relative;
   background: #FFFFFF;
@@ -3480,4 +3465,20 @@ p {
   float: right;
   position: relative;
   margin-top: 5px;
+}
+#space-description {
+  width: 890px;
+  float: left;
+  position: relative;
+  clear: left;
+  margin: 0 0 20px 20px;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+}
+#space-description p {
+  margin: 0;
+  padding: 0;
+  color: #808080;
+  font-size: 1.3em;
 }

@@ -8,6 +8,8 @@
 
     {% if space.ideas != empty %}
     <div id="index">
+        <div id="space-description">{{space.summary | markdown}}</div>
+        
         <ul id="entries-gallery">
             {% paginate space.ideas by 15 %}
             {% for idea in paginate %}
