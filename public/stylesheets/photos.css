@@ -2441,7 +2441,7 @@ header.container {
   position: relative;
 }
 header h1 {
-  max-width: 560px;
+  width: 600px;
   float: left;
   position: relative;
   margin: 0;
