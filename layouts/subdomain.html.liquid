@@ -63,6 +63,11 @@
     {{ alert }}
     </div>
     {% endif %}
+    {% if notice %}
+    <div class="alert-message success prompt">
+    {{ notice }}
+    </div>
+    {% endif %}
 
     <!-- Header -->
     <header class="container">
