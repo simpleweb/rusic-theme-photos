@@ -1,55 +1,12 @@
 $(document).ready(function(){
 
-    $('.alert-message.prompt').delay(2500).fadeOut('slow');
-
-    // Fade in login prompt
-    $('#login-tip').hide().delay(1200).fadeIn(1000).delay(100);
-
-    // Show & hide new idea container
-    $(".slide").hide();
-    $(".show").show();
-    
-    $('.show').click(function(){
-    $(this).next(".slide").slideToggle();
-    });
-
-    // Show & hide new idea container
-    $("#new-entry").hide();
-    $(".showbtn").show();
-    
-    $('.showbtn').click(function(){
-    $("#new-entry").delay(200).slideToggle();
-    });
-
-    // Add alt class to photoboard
-    $('#entries-gallery li').filter(function(index){
-    return (index%2 == 1);
-    }).addClass('alt');
-
-    // check for countdown plugin
-    if($.fn.countdown) {
-        // grab clock element and extract "expires at" timestamp
-    	var $time = $("time#expires-at"),
-          timestamp = Date.parse($time.attr('datetime')),
-          expiresAt = new Date(timestamp);
-          $time.countdown({
-            until: expiresAt,
-            format: 'dHMS'
-          });
-
-$(function(){
+    $(function(){
       
       var $container = $('#entries-gallery');
       
       $container.isotope({
         itemSelector : '.photo',
         getSortData : {
-          symbol : function( $elem ) {
-            return $elem.attr('data-symbol');
-          },
-          category : function( $elem ) {
-            return $elem.attr('data-category');
-          },
           number : function( $elem ) {
             return parseInt( $elem.find('.number').text(), 10 );
           },
@@ -97,6 +54,42 @@ $(function(){
       
     });
 
+    $('.alert-message.prompt').delay(2500).fadeOut('slow');
+
+    // Fade in login prompt
+    $('#login-tip').hide().delay(1200).fadeIn(1000).delay(100);
+
+    // Show & hide new idea container
+    $(".slide").hide();
+    $(".show").show();
+    
+    $('.show').click(function(){
+    $(this).next(".slide").slideToggle();
+    });
+
+    // Show & hide new idea container
+    $("#new-entry").hide();
+    $(".showbtn").show();
+    
+    $('.showbtn').click(function(){
+    $("#new-entry").delay(200).slideToggle();
+    });
+
+    // Add alt class to photoboard
+    $('#entries-gallery li').filter(function(index){
+    return (index%2 == 1);
+    }).addClass('alt');
+
+    // check for countdown plugin
+    if($.fn.countdown) {
+        // grab clock element and extract "expires at" timestamp
+    	var $time = $("time#expires-at"),
+          timestamp = Date.parse($time.attr('datetime')),
+          expiresAt = new Date(timestamp);
+          $time.countdown({
+            until: expiresAt,
+            format: 'dHMS'
+          });
         
 }
 });
