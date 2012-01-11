@@ -78,16 +78,16 @@
     #floater { position:relative; float:left; height:50%; margin-bottom:-370px; width:1px; }
     #centered { position:relative; clear:left; height:740px; width:80%; max-width:940px; min-width:940px; margin:0 auto; }
 
-    header { color: @white; margin: 60px 0 20px 0; *margin: 60px 0 30px 0; padding: 0;
+    header { color: @white; margin: 40px 0 20px 0; *margin: 60px 0 30px 0; padding: 0;
         &.container { position: relative; }
-        h1 { max-width: 360px; float: left; position: relative; padding: 12px 12px; font-size: 2.5em; color: @white; background: darken(@baseColor, 20%); .border-radius(5px); line-height: 1.1em;
+        h1 { max-width: 560px; float: left; position: relative; margin: 0; padding: 12px 12px; font-size: 2.7em; color: @white; background: rgba(000,000,000,.4); .box-shadow(0 1px 0 rgba(255,255,255,.2)); .border-radius(4px); line-height: 1.1em;
         a { color: @white;
         &:hover { color: @white; text-decoration: none; } }}
-        #space-description { width: 220px; float: left; position: relative; margin: 2px 0 0 15px; color: lighten(@baseColor, 25%);
-            p { font-size: 12px; line-height: 18px; }}
+        #space-description { width: 100%; float: left; position: relative; clear: left; margin: 20px 0 0 0; padding: 10px 0 0 0; color: lighten(@baseColor, 25%); border-top: 1px dotted darken(@baseColor, 12%);
+            p { margin: 0; padding: 0; color: @grayLight; }}
     }
 
-    #wrapper { position: relative; background: #FFFFFF; .border-radius(3px); .box-shadow(0 0 20px rgba(000,000,000,.8)); *padding-bottom: 20px; margin-bottom: 40px;
+    #wrapper { position: relative; background: #FFFFFF; .border-radius(3px); .box-shadow(0 5px 10px rgba(000,000,000,.6)); *padding-bottom: 20px; margin-bottom: 40px;
         .topbar { float: left; position: relative;
         .nav { float: left; }}
     }
@@ -119,14 +119,14 @@
     }
 
     #page-navigation {
-        .next { position: absolute; top: 100px; right: -30px; width: 34px; height: 50px; background: url(../images/arrow-right.png) 12px 13px no-repeat @white; .border-radius(0 4px 4px 0); .box-shadow(3px 0 3px rgba(000,000,000,.2)); text-indent: -999px; overflow: hidden; }
-        .prev { position: absolute; top: 100px; left: -30px; width: 34px; height: 50px; background: url(../images/arrow-left.png) 9px 13px no-repeat @white; .border-radius(4px 0 0 4px); .box-shadow(-3px 0 3px rgba(000,000,000,.2)); text-indent: -999px; overflow: hidden; }
+        .next { position: absolute; top: 0px; right: -30px; width: 34px; height: 50px; background: url(../images/arrow-right.png) 12px 13px no-repeat @white; .border-radius(0 4px 4px 0); .box-shadow(3px 0 3px rgba(000,000,000,.2)); text-indent: -999px; overflow: hidden; }
+        .prev { position: absolute; top: 0px; left: -30px; width: 34px; height: 50px; background: url(../images/arrow-left.png) 9px 13px no-repeat @white; .border-radius(4px 0 0 4px); .box-shadow(-3px 0 3px rgba(000,000,000,.2)); text-indent: -999px; overflow: hidden; }
         .next:hover { right: -34px; }
         .prev:hover { left: -34px; }
     }
 
-    .alert-message.logintip { width: 330px; position: absolute; padding: 6px 10px 8px 10px; top: 2px; right: 208px; .close { color: #000; }
-        i { width: 17px; height: 16px; background: url(../images/alert-point.png) no-repeat; display: block; position: absolute; right: -17px; top: 5px; }}
+    .alert-message.logintip { min-width: 300px; position: absolute; padding: 6px 10px 8px 10px; top: 2px; right: 215px; .close { color: #000; }
+        i { width: 17px; height: 16px; background: url(../images/alert-point.png) no-repeat; display: block; position: absolute; right: -16px; top: 5px; }}
     .alert-message.logintip p { font-size: 11px; line-height: 14px; color: @gray; }
 
     #navigation { float: left; position: relative; a { margin: 6px 0 0 6px; } }
@@ -134,11 +134,11 @@
 
     // HOMEPAGE //
 
-    #entries-gallery { width: 895px; float: left; position: relative; clear: left; list-style-type: none; margin: 5px 24px 24px 24px; padding: 0;
+    #entries-gallery { width: 916px; float: left; position: relative; clear: left; list-style-type: none; margin: 5px 0 24px 24px; padding: 0; overflow: visible !important;
         li { float: left; position: relative; margin: 0 16px 16px 0;
             &.last { margin: 0 0 12px 0; }}
         a { float: left; position: relative; padding: 3px; border: 1px solid #CCC; .box-shadow(0 1px 2px #CCCCCC); -moz-transform: scale(1) rotate(1deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform: scale(1) rotate(1deg) translate(0px, 0px) skew(0deg, 0deg); -o-transform: scale(1) rotate(1deg) translate(0px, 0px) skew(0deg, 0deg); -ms-transform: scale(1) rotate(1deg) translate(0px, 0px) skew(0deg, 0deg); transform: scale(1) rotate(1deg) translate(0px, 0px) skew(0deg, 0deg); background: @white; text-deocration: none;
-        &:hover { text-decoration: none; }
+        &:hover { text-decoration: none; z-index: 9999 !important; }
         &:hover h2, &:hover .like-count { display: block; cursor: pointer; }}
         li.alt a { -moz-transform: scale(1) rotate(-1.5deg) translate(0px, 0px) skew(0deg, 0deg);
         -webkit-transform: scale(1) rotate(-1.5deg) translate(0px, 0px) skew(0deg, 0deg);
@@ -156,7 +156,6 @@
         -o-transform: scale(1.4) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
         -ms-transform: scale(1.4) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
         transform: scale(1.4) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
-        z-index: 999;
         }
         h2 { position: absolute; left: 3px; top: 3px; width: 137px; height: 137px; padding: 10px; background: url(../images/dark.png); font-size: 14px; line-height: 16px; text-align: center; display: none; color: @white; text-decoration: none;
         a { color: @white; }}
@@ -169,15 +168,15 @@
          }
     }
 
-    #sort-order { width: 400px; float: left; position: relative; clear: left; margin: 5px 20px 10px 20px; padding: 0;
-        span { display: block; float: left; position: relative; margin: 10px 10px 0 0; color: @grayLight; font-weight: bold; }
+    .sort-order { width: 400px; float: left; position: relative; clear: left; margin: 8px 20px 10px 20px; padding: 0;
+        span { display: block; float: left; position: relative; margin: 9px 10px 0 0; color: @grayLight; font-weight: bold; font-size: 12px; }
         ul { float: left; position: relative; margin: 0; }
-        li a { padding: 6px 10px;  font-size: 12px; line-height: 13px; color: @gray; }
-        li.active a, li a:hover { background: @grayLight; color: @white; }
+        a { padding: 6px 10px;  font-size: 12px; line-height: 13px; color: @gray; }
+        a.active, li a:hover { background: @grayLight; color: @grayDark; text-shadow: (0px 1px 0px rgba(255,255,255,.8)); }
     }
 
     #share-space {
-        width:  400px; float: right; position: relative; margin: 10px 20px 10px 20px;
+        width:  400px; float: right; position: relative; margin: 10px 10px 10px 20px;
         .text { float: right; position: relative; margin: 7px 10px 0 0; color: @grayLight; font-weight: bold; }
         .buttons { float: right; position: relative; margin: 0; padding: 0; list-style-type: none;
             li { float: left; position: relative; margin: 5px 0; }
@@ -187,7 +186,7 @@
     // SINGLE ENTRY //
 
     #single-entry {
-        h1 { width: 470px; color: @baseColor; }
+        h1 { width: 340px; color: @baseColor; }
         .modal { width: 530px; }
         .large-photo { float: left; position: relative; }
         .meta { float: left; position: relative; margin: 10px 0 10px 0;
@@ -247,29 +246,17 @@
 
 
 
-.countdown-text { width: 100%; float: left; position: relative; text-align: center; margin-top: 5px; }
+.countdown-text { float: right; position: relative; clear: right; text-align: center; margin-top: 3px; margin-right: 3px; }
 
 div#timer {
-  width: 248px;
-  position: absolute;
-  right: 0;
-  bottom: 5px;
-  bottom: 0\9;
-  background-color: #1a1d24;
-  background-image: -moz-linear-gradient(top, #2b303b, #1a1d24);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b303b), color-stop(1, #1a1d24));
-  .box-shadow(inset 0px 0px 7px rgba(0, 0, 0, 0.9));
-  padding: 10px;
-  background: darken(@baseColor, 10%);
-  .border-radius(4px);
-  .box-shadow(0 1px 0 rgba(255,255,255,.1));
-  margin-top: -24px;
-  color: lighten(@baseColor, 10%);
+  color: @grayLight;
 }
 
 time#expires-at {
   display: inline-block;
   width: auto;
+  float: right;
+  position: relative;
 
 
   span.countdown_row {
@@ -323,8 +310,8 @@ time#expires-at {
 
 
     .entry-page {
-        header { margin-top: 50px; }
-        .entry-image { width: 500px; float: left; position: relative; margin: 0 30px  30px 30px; padding: 2px; border: 1px solid #CCC; .box-shadow(0 1px 2px #CCCCCC); }
+        header { margin-top: 40px; }
+        .entry-image { width: 500px; float: left; position: relative; margin: 0 30px 0 30px; padding: 2px; border: 1px solid #CCC; .box-shadow(0 1px 2px #CCCCCC); }
         #entry-info { width: 340px; float: left; position: relative; margin: 0 0 0 0; }
 
         .actions-menu { float: left; position: relative; clear: left; width: 100%; margin: 5px 0 1px 0; border: 1px solid darken(@neutral, 25%); .border-radius(4px); background: darken(@neutral, 25%); #gradient > .vertical(darken(@neutral, 15%), darken(@neutral, 25%)); list-style-type: none; .box-shadow(0 1px 0 rgba(255,255,255,.5));
@@ -358,7 +345,7 @@ time#expires-at {
     .back-link {
         float: left;
         position: relative;
-        margin: 20px 0 0 20px;
+        margin: 18px 0 0 20px;
         color: darken(@neutral, 25%);
             &:hover { text-decoration: none; color: darken(@neutral, 40%); }
     }
@@ -368,7 +355,7 @@ time#expires-at {
         float: left;
         position: relative;
         padding: 20px;
-        background: url(../images/background.png) repeat darken(@tetra2, 27%);
+        background: url(../images/background.png) @grayDark;
         color: @neutral;
         h2 { color: @neutral; }
         label { color: @neutral; }
@@ -379,7 +366,7 @@ time#expires-at {
             position: relative;
             clear: left;
             padding: 10px 0 0 0;
-            border-top: 1px solid darken(@tetra2, 22%);
+            border-top: 1px dotted darken(@gray, 15%);
             .btn.submit { position: absolute; top: 8px; right: 0; }
         }
         textarea { width: 450px; }
@@ -389,9 +376,12 @@ time#expires-at {
     p { margin-bottom: 15px; }
 
     .alert-message.prompt {
-        width: 425px;
         float: left; position: relative;
-        margin: 10px 20px 5px 20px;
+        width: 100%;
+        margin: -41px 0 0 0;
+        padding: 6px 0 5px 0;
+        text-align: center;
+        .border-radius(0);
     }
 
     .empty {
@@ -402,3 +392,46 @@ time#expires-at {
         h1 { font-size: 2.2em; color: @gray; margin: 0 0 5px 0; } 
         p { color: @gray; }
     }
+
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+.isotope .isotope-item:hover { z-index: 999 !important; }
+
+#index { width: 100%; float: left; position: relative; padding-top: 20px; border-top: 1px dotted @grayLighter; }
+
+#single-entry {
+width: 100%;
+float: left;
+position: relative;
+margin: 0 0 20px 0;
+padding-top: 20px;
+border-top: 1px dotted @grayLighter; 
+}
+
+.share-buttons {
+float: right;
+position: relative;
+margin-top: 5px;
+}

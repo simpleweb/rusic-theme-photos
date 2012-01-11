@@ -2,6 +2,8 @@
 
     <a href="{{space.permalink}}" title="back to all {{space.title}} entries" class="back-link">&laquo; back to all entries</a>
 
+    <div id="single-entry">
+
     <img src="{{idea.images.first.grande}}" alt="Image for {{idea.title}}" class="entry-image" />
 
     <div id="entry-info">
@@ -13,6 +15,8 @@
             <li><a href="{{idea.like_link}}" data-method="post" title="like this entry" class="like">like this entry</a></li>
             <li class="alt"><a href="#comments" title="link to comments for this entry" class="comment">{{ idea.comments_count }} comments</a></li>
         </ul>
+    </div>
+
     </div>
 
     <div id="comments" class="comments" class="span12">

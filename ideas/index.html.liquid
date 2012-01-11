@@ -1,23 +1,30 @@
-    <!--
-    <div id="sort-order">
+    <div class="sort-order" data-option-key="sortBy">
         <span>Order by:</span>
         <ul class="pills">
-            <li class="active"><a href="#">latest</a></li>
-            <li><a href="#">popular</a></li>
-            <li><a href="#">most comments</a></li>
+            <li><a href="#sortBy=original-order" data-option-value="original-order" class="active">latest</a></li>
+            <li><a href="#sortBy=number" data-option-value="number">popular</a></li>
         </ul>
     </div>
-    -->
 
     {% if space.ideas != empty %}
-    <ul id="entries-gallery">
-        {% paginate space.ideas by 15 %}
-        {% for idea in paginate %}
-        <li class=""><a href="{{idea.permalink}}" title="link to full page for {{idea.title}}"><img src="{{idea.images.first.medium_square}}" alt="Image for {{idea.title}}" width="157" height="157" /><h2>{{idea.title}}</h2>
-        <span class="like-count"><span class="heart">&hearts;</span> {{idea.likes}}</span></a></li>
-        {% endfor %}
-        {% endpaginate %}
-    </ul>
+    <div id="index">
+        <ul id="entries-gallery">
+            {% paginate space.ideas by 15 %}
+            {% for idea in paginate %}
+            <li class="photo"><a href="{{idea.permalink}}" title="link to full page for {{idea.title}}"><img src="{{idea.images.first.medium_square}}" alt="Image for {{idea.title}}" width="157" height="157" /><h2 class="name">{{idea.title}}</h2>
+            <span class="like-count"><span class="heart">&hearts;</span> <span class="number">{{idea.likes}}</span></span></a></li>
+            {% endfor %}
+            {% endpaginate %}
+        </ul>
+
+        <!-- Paging -->
+        <!--
+        <div id="page-navigation">
+            <a href="{{ pagination.next_url }}" title="#" class="next">next page</a>
+            <a href="{{ pagination.previous_url }}" title="#" class="prev">previous page</a>
+        </div>
+        -->
+    </div>
     {% else %}
 
     <div class="empty">
@@ -30,9 +37,3 @@
     </div>
 
     {% endif %}
-
-    <!-- Paging -->
-    <div id="page-navigation">
-        <a href="{{ pagination.next_url }}" title="#" class="next">next page</a>
-        <a href="{{ pagination.previous_url }}" title="#" class="prev">previous page</a>
-    </div>
