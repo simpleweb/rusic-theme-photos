@@ -21,7 +21,7 @@ $(document).ready(function(){
       
       
       var $optionSets = $('.sort-order'),
-          $optionLinks = $optionSets.find('a');
+          $optionLinks = $optionSets.find('a.likes, a.popular');
 
       $optionLinks.click(function(){
         var $this = $(this);
