@@ -3482,3 +3482,16 @@ p {
   color: #808080;
   font-size: 1.3em;
 }
+#new-entry label.error {
+  clear: left;
+  float: left;
+  position: relative;
+  display: block;
+  margin-left: 150px;
+  width: 460px;
+  text-align: left;
+  margin-bottom: 14px;
+  font-size: .85em;
+  color: #d20044;
+  padding: 2px 0 0 0;
+}
