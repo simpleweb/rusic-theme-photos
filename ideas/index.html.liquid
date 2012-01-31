@@ -3,7 +3,7 @@
         <ul class="pills">
             <li><a href="{{space.permalink}}" data-option-value="original-order" class="likes {% if filter == "own" %}{% else %}{% if sort == "likes" %}{% else %}active{% endif %}{% endif %}">latest first</a></li>
             <li><a href="{{space.permalink}}?sort=likes" data-option-value="number" class="popular {% if sort == "own" %}likes{% endif %}">popular first</a></li>
-            <li><a href="{{space.permalink}}?filter=own" class="{% if filter == "own" %}active{% endif %}">my entries</a></li>
+            {% if current_user %}<li><a href="{{space.permalink}}?filter=own" class="{% if filter == "own" %}active{% endif %}">my entries</a></li>{% endif %}
         </ul>
     </div>
 
