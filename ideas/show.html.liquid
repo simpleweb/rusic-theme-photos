@@ -12,7 +12,7 @@
         <div id="entry-detail">{{idea.content | markdown}}</div>
 
         <ul class="actions-menu">
-            <li><a href="{{idea.like_link}}" data-method="post" title="like this entry" class="like">like this entry</a></li>
+            <li><a href="{{idea.like_link}}" title="like action for {{idea.title}}" data-method="post" class="like">like this entry ({{idea.likes}})</a></li>
             <li class="alt"><a href="#comments" title="link to comments for this entry" class="comment">{{ idea.comments_count }} comments</a></li>
         </ul>
     </div>
