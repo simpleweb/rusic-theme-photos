@@ -43,6 +43,7 @@
       {{ content_for_header }}
       <script src="/assets/jquery.countdown.min.js"></script>
       <script src="{{asset_url}}/javascripts/jquery.isotope.min.js"></script>
+      <script src="{{asset_url}}/javascripts/jquery.validate.js"></script>
       <script src="{{asset_url}}/javascripts/scripts.js"></script>
 
       <!-- Fav & touch icons -->
@@ -121,9 +122,9 @@
           <h2>Add a new entry to {{space.title}}</h2>
           <form id="entry_form" method="post" action="{{space.permalink}}/ideas" class="clearfix" enctype="multipart/form-data">
             <fieldset>
-              <div class="input"><label for="idea[title]">Entry title: </label><input class="span8" id="idea_title" name="idea[title]" type="text"></div>
-              <div class="input"><label for="idea[content]">Detail: </label> <textarea id="idea_content" name="idea[content]" rows="3"></textarea></div>
-              <div class="input"><label for="idea_images_attributes_0_file">Upload photo: </label> <input type="file" id="idea_images_attributes_0_file" name="idea[images_attributes][0][file]" /> </div>
+              <div class="input required"><label for="idea[title]">Entry title: </label><input class="span8" id="idea_title" name="idea[title]" type="text"></div>
+              <div class="input required"><label for="idea[content]">Detail: </label> <textarea id="idea_content" name="idea[content]" rows="3"></textarea></div>
+              <div class="input required"><label for="idea_images_attributes_0_file">Upload photo: </label> <input type="file" id="idea_images_attributes_0_file" name="idea[images_attributes][0][file]" /> </div>
               <div class="submit-group">
                 <div class="checkarea"><input type="checkbox" name="idea[should_post_to_social]" value="1" checked />Share this to {{current_user.provider}}?</div>
                 <input type="submit" value="submit" class="btn primary submit" />
