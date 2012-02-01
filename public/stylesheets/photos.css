@@ -3005,6 +3005,17 @@ header h1 a:hover {
 .actions-menu li.alt a {
   border-right: none;
 }
+.actions-menu li span.like.on {
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 8px 9px 8px 32px;
+  border-right: 1px solid #a6a6a6;
+  color: #ffffff;
+  background-image: url(../images/share-heart.png);
+  background-repeat: no-repeat;
+  background-position: 7px 8px;
+}
 .comments {
   float: left;
   position: relative;
