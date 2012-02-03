@@ -85,7 +85,7 @@
         &:hover { color: @white; text-decoration: none; } }}
     }
 
-    #wrapper { position: relative; background: #FFFFFF; .border-radius(3px); .box-shadow(0 5px 10px rgba(000,000,000,.6)); *padding-bottom: 20px; margin-bottom: 40px;
+    #wrapper { position: relative; background: #FFFFFF; .border-radius(3px); .box-shadow(0 5px 10px rgba(000,000,000,.6)); *padding-bottom: 20px; margin-bottom: 25px;
         .topbar { float: left; position: relative;
         .nav { float: left; }}
     }
@@ -452,4 +452,22 @@ margin-top: 5px;
     font-size: .85em;
     color: @red;
     padding: 2px 0 0 0;
+}
+
+footer { 
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    color: @gray;
+
+    .rusic-link { float: left; position: relative; }
+    .rusic-link, a.rss { padding: 5px 10px; background-color: rgba(000,000,000,.4); .border-radius(); }
+
+    a {
+        color: @grayLight;
+        &:hover { color: @grayLighter; }
+        &.rss { float: right; position: relative; clear: none; padding-left: 30px; background-image: url(../images/icon-rss.png); background-position: 10px 7px; background-repeat: no-repeat; }
+    }
+
 }

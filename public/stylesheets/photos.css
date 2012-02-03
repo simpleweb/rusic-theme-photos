@@ -2474,7 +2474,7 @@ header h1 a:hover {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   *padding-bottom: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 #wrapper .topbar {
   float: left;
@@ -3505,4 +3505,37 @@ p {
   font-size: .85em;
   color: #d20044;
   padding: 2px 0 0 0;
+}
+footer {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  color: #808080;
+}
+footer .rusic-link {
+  float: left;
+  position: relative;
+}
+footer .rusic-link, footer a.rss {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+footer a {
+  color: #bfbfbf;
+}
+footer a:hover {
+  color: #e6e6e6;
+}
+footer a.rss {
+  float: right;
+  position: relative;
+  clear: none;
+  padding-left: 30px;
+  background-image: url(../images/icon-rss.png);
+  background-position: 10px 7px;
+  background-repeat: no-repeat;
 }
