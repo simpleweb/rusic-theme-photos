@@ -64,22 +64,27 @@ $(document).ready(function(){
 
 
 // AJAXIFY LIKE BUTTONS
-function attachLiking() {
+$('a.like').click(function(){
+        
+    var button = this;
     
-    $('a.like', '.actions-menu').on('click', function() {
+    $(this).addClass('disabled');
+    
+    $.post($(this).attr('the_link'), function(data) {
+      if(data.valid){
+        $(button).find(".likecount").html('('+data.likes_count+')');
+        $(button).removeClass('disabled');
+      }else{
+        alert(data.message);
+        $(button).removeClass('disabled');
+      }
+    }, 'json');
+  });
 
-        var likeLink = $(this);
 
-        $.post(likeLink.attr('href'), function(data) {
-          $('body').append('<div class="alert-message success prompt">Thanks for liking the picture!</div>');
-          likeLink.replaceWith('<span class="liked">' + (parseInt(likeLink.html())+1) + '</span>');
-          removeAlerts();
-        });
 
-        return false;
-    });
 
-  }
+
 
 
 });
