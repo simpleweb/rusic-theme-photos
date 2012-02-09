@@ -15,7 +15,7 @@
             {% if idea.liked? %}
                 <li><span class="like on">liked! <strong>({{ idea.likes }})</span></li>
                 {% else %}
-                <li><a href="{{idea.like_link}}" title="like action for {{idea.title}}" class="like">like this entry <span class="likecount">({{idea.likes}})</span></a></li>
+                <li><span the_link="{{idea.like_link}}" class="like">like this entry <span class="likecount">({{idea.likes}})</span></span></li>
                 {% endif %}
             <li class="alt"><a href="#comments" title="link to comments for this entry" class="comment">{{ idea.comments_count }} comments</a></li>
         </ul>
