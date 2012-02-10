@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 
 // AJAXIFY LIKE BUTTONS
-$('a.like').click(function(){
+$('.likelnk').click(function(){
         
     var button = this;
     
