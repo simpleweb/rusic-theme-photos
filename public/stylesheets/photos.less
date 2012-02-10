@@ -212,7 +212,6 @@
                 &.facebook { background-image: url(../images/share-facebook.png); background-repeat: no-repeat; background-position: 7px 8px; }
                 &.twitter { backgrodesund-image: url(../images/share-twitter.png); background-repeat: no-repeat; background-position: 7px 8px; }}
             &.alt a { border-right: none; }
-            span.like.on { float: left; position: relative; margin: 0; padding: 8px 9px 8px 32px; border-right: 1px solid darken(@grayLight, 10%); color: @white; background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 7px 8px; }
             }
     }
 
@@ -471,3 +470,12 @@ footer {
     }
 
 }
+
+
+
+ .likebtn { float: left; position: relative; margin: 0 5px 0 0; padding: 8px 15px 8px 35px; border-right: 1px solid darken(@neutral, 20%); color: @white; text-shadow: 0 1px 0 rgba(000,000,000,.5);  background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px;
+ .on, &:hover { cursor: pointer; text-decoration: none; background-color: darken(@neutral, 40%); background-image: url(../images/share-heart-on.png); background-repeat: no-repeat; background-position: 8px 9px;  }}
+
+ .like { float: left; position: relative; margin: 0 5px 0 0; padding: 8px 15px 8px 35px; border-right: 1px solid darken(@neutral, 20%); color: @white; text-shadow: 0 1px 0 rgba(000,000,000,.5);  background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px;
+    &.on { background-image: url(../images/share-heart-on.png); background-repeat: no-repeat; background-position: 8px 9px;  } 
+ }

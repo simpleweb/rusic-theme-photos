@@ -3005,17 +3005,6 @@ header h1 a:hover {
 .actions-menu li.alt a {
   border-right: none;
 }
-.actions-menu li span.like.on {
-  float: left;
-  position: relative;
-  margin: 0;
-  padding: 8px 9px 8px 32px;
-  border-right: 1px solid #a6a6a6;
-  color: #ffffff;
-  background-image: url(../images/share-heart.png);
-  background-repeat: no-repeat;
-  background-position: 7px 8px;
-}
 .comments {
   float: left;
   position: relative;
@@ -3538,4 +3527,41 @@ footer a.rss {
   background-image: url(../images/icon-rss.png);
   background-position: 10px 7px;
   background-repeat: no-repeat;
+}
+.likebtn {
+  float: left;
+  position: relative;
+  margin: 0 5px 0 0;
+  padding: 8px 15px 8px 35px;
+  border-right: 1px solid #999999;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  background-image: url(../images/share-heart.png);
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+}
+.likebtn .on, .likebtn:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #666666;
+  background-image: url(../images/share-heart-on.png);
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+}
+.like {
+  float: left;
+  position: relative;
+  margin: 0 5px 0 0;
+  padding: 8px 15px 8px 35px;
+  border-right: 1px solid #999999;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  background-image: url(../images/share-heart.png);
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+}
+.like.on {
+  background-image: url(../images/share-heart-on.png);
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
 }

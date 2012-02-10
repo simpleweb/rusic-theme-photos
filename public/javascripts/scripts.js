@@ -76,6 +76,7 @@ $('.likebtn').click(function(){
       }else{
         alert(data.message);
         $(button).removeClass('disabled');
+        $(button).addClass('on');
       }
     }, 'json');
   });
