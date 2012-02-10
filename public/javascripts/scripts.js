@@ -62,14 +62,13 @@ $(document).ready(function(){
         
 }
 
-
 // AJAXIFY LIKE BUTTONS
-$('.likelnk').click(function(){
-        
+$('.likebtn').click(function(){
+
     var button = this;
-    
+
     $(this).addClass('disabled');
-    
+
     $.post($(this).attr('the_link'), function(data) {
       if(data.valid){
         $(button).find(".likecount").html('('+data.likes_count+')');
@@ -80,11 +79,6 @@ $('.likelnk').click(function(){
       }
     }, 'json');
   });
-
-
-
-
-
 
 
 });
