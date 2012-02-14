@@ -3,7 +3,7 @@
         <ul class="pills">
             <li><a href="{{space.permalink}}" class="likes {% if filter == "own" %}{% else %}{% if sort == "likes" %}{% else %}active{% endif %}{% endif %}">latest first</a></li>
             <li><a href="{{space.permalink}}?sort=likes" class="popular {% if sort == "likes" %}active{% endif %}">popular first</a></li>
-            {% if current_user %}<li><a href="{{space.permalink}}?filter=own" class="{% if filter == "own" %}active{% endif %}">my entries</a></li>{% endif %}
+            {% if current_user %}<li><a href="{{space.permalink}}?filter=own" class="{% if filter == "own" %}active{% endif %}">my {{ theme.ideas_context }}</a></li>{% endif %}
         </ul>
     </div>
 
@@ -31,11 +31,11 @@
     {% else %}
 
     <div class="empty">
-      <h1>There aren't any photos here yet!</h1>
+      <h1>There aren't any {{ theme.ideas_context }} here yet!</h1>
       {% if current_user %}
-      <p>be the first to add photo by using the 'add a new idea' button</p>
+      <p>be the first to add {{ theme.idea_context }} by using the 'add a new {{ theme.idea_context }}' button</p>
       {% else %}
-      <p>login with twitter or facebook to be the first to add a photo</p>
+      <p>login with twitter or facebook to be the first to add a {{ theme.idea_context }}</p>
       {% endif %}
     </div>
 
