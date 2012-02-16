@@ -52,7 +52,7 @@
       <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
-  <body class="{{ body_class }}">
+  <body class="{{ body_class }} {% unless current_user %}logged-out{% endunless %}">
 
     {% if error %}
     <div class="alert-message error prompt">
@@ -122,7 +122,7 @@
           <h2>Add a new {{ theme.idea_context }} to {{space.title}}</h2>
           <form id="entry_form" method="post" action="{{space.permalink}}/ideas" class="clearfix" enctype="multipart/form-data">
             <fieldset>
-              <div class="input"><label for="idea[title]">{{ theme.idea_context }} title: </label><input class="span8 required" id="idea_title" name="idea[title]" type="text"></div>
+              <div class="input"><label for="idea[title]">{{ theme.idea_context | capitalize }} title: </label><input class="span8 required" id="idea_title" name="idea[title]" type="text"></div>
               <div class="input"><label for="idea[content]">Detail: </label> <textarea id="idea_content" name="idea[content]" rows="3" class="required"></textarea></div>
               <div class="input"><label for="idea_images_attributes_0_file">Upload {{ theme.idea_context }}: </label> <input type="file" id="idea_images_attributes_0_file" name="idea[images_attributes][0][file]" class="required" /> </div>
               <div class="submit-group">

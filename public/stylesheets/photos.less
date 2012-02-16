@@ -69,7 +69,7 @@
 
     html, body { margin:0; padding:0; }
     html { background: transparent; }
-    body { background: url(../images/background.png) repeat @baseColor; font-family: 'OpenSansRegular'; }
+    body { background: url(../images/background.png) repeat @baseColor; font-family: 'OpenSansRegular';}
 
     a { color: @complement; }
     a:hover { color: darken(@complement, 20%); text-decoration: none; }
@@ -87,6 +87,7 @@
 
     #wrapper { position: relative; background: #FFFFFF; .border-radius(3px); .box-shadow(0 5px 10px rgba(000,000,000,.6)); *padding-bottom: 20px; margin-bottom: 25px;
         .topbar { float: left; position: relative;
+        a:hover { color: @grayLighter; }
         .nav { float: left; }}
     }
 
@@ -239,7 +240,8 @@
                 li { float: left; position: relative; clear: none; margin: 0 5px 10px 0; }}
             .logged-out { width: 830px;
                 p { width: 600px; float: left; position: relative; margin: 10px 0 0 0; }}
-            .submit-group { width: 850px; float: left; position: relative; clear: left; margin-bottom: 20px; }
+            .submit-group { width: 850px; float: left; position: relative; clear: left; margin-bottom: 20px; 
+            .checkarea input { margin-right: 5px; }}
     }
 
 
@@ -366,6 +368,7 @@ time#expires-at {
             clear: left;
             padding: 10px 0 0 0;
             border-top: 1px dotted darken(@gray, 15%);
+            .checkarea input { margin-right: 5px; }
             .btn.submit { position: absolute; top: 8px; right: 0; }
         }
         textarea { width: 450px; }
@@ -457,7 +460,7 @@ margin-top: 5px;
 footer { 
     width: 940px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 60px 0;
     border: none;
     color: @gray;
 
@@ -474,10 +477,10 @@ footer {
 
 
 
- .likebtn { float: left; position: relative; margin: 0 5px 0 0; padding: 8px 15px 8px 35px; border-right: 1px solid darken(@neutral, 20%); color: @white; text-shadow: 0 1px 0 rgba(000,000,000,.5);  background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px;
+ .likebtn { float: left; position: relative; margin: 0; padding: 8px 15px 8px 35px; border-right: 1px solid darken(@neutral, 20%); color: @white; text-shadow: 0 1px 0 rgba(000,000,000,.5);  background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px;
  .on, &:hover { cursor: pointer; text-decoration: none; background-color: darken(@neutral, 40%); background-image: url(../images/share-heart-on.png); background-repeat: no-repeat; background-position: 8px 9px;  }}
 
- .like { float: left; position: relative; margin: 0 5px 0 0; padding: 8px 15px 8px 35px; border-right: 1px solid darken(@neutral, 20%); color: @white; text-shadow: 0 1px 0 rgba(000,000,000,.5);  background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px;
+ .like { float: left; position: relative; margin: 0; padding: 8px 15px 8px 35px; border-right: 1px solid darken(@neutral, 20%); color: @white; text-shadow: 0 1px 0 rgba(000,000,000,.5);  background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px;
     &.on { background-image: url(../images/share-heart-on.png); background-repeat: no-repeat; background-position: 8px 9px;  } 
  }
 
@@ -491,7 +494,13 @@ footer {
     label { margin: 0 10px 0 0; padding-top: 5px; color: @gray; text-align: left; }
     .input { margin-bottom: 12px; } 
     #idea_content { width: 450px; height: 100px; }
-    .submit-group { width: 600px; float: left; position: relative; clear: left; padding: 10px 0 0 0; margin: 10px 0 20px 150px; border-top: 1px dotted @grayLight; }
+    .submit-group { width: 600px; float: left; position: relative; clear: left; padding: 10px 0 0 0; margin: 10px 0 20px 150px; border-top: 1px dotted @grayLight; 
+        .checkarea input { margin-right: 5px; }}
     .submit { float: right; position: relative; }
 } 
 
+.logged-out {
+    .likebtn:hover {
+        background-color: transparent; background-image: url(../images/share-heart.png); background-repeat: no-repeat; background-position: 8px 9px; cursor: default;
+    }
+}

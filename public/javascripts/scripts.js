@@ -73,6 +73,7 @@ $('.likebtn').click(function(){
       if(data.valid){
         $(button).find(".likecount").html('('+data.likes_count+')');
         $(button).removeClass('disabled');
+        $(button).addClass('on');
       }else{
         alert(data.message);
         $(button).removeClass('disabled');
